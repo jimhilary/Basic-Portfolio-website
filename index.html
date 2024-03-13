@@ -1,0 +1,423 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+  
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport"content="width=device-width, initial-scale=1.0"> 
+    <title>My  Cool Portfolio Website</title> 
+
+    <!--rel indicates the curremt relationship between current document and linked resouorces-->
+
+    <!--href: Specifies the URL of the linked resource. In this case, it points to the Font Awesome CSS file hosted on the CDN (Content Delivery Network) 
+    at "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css".-->
+
+    <!--Provides a cryptographic hash value to ensure the integrity of the linked resource. -->
+
+    <link rel="crossorigin="anonymous="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity= "sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKUus" referrerpolicy="no-referrer" />
+
+<!--This link tag is used to include the "styles.css" file as a stylesheet in your HTML document-->
+    <link rel="stylesheet" href="styles.css"> 
+    <!--This link tag is used to include the "responsive.css" file as a stylesheet in your HTML document-->
+    <link rel="stylesheet" href="responsive.css"> 
+</head> 
+  
+<body> 
+    <!-- Navbar header section -->
+    <header class="header"> 
+        <nav class="navbar"> 
+            <div class="logo"> 
+                <h2 class="logo-heading">Jim Hilary</h2> 
+            </div> 
+            <div class="hamburger" id="hamburger"> 
+                <!--i elements represents  specific classes and FontAwesome icons.-->
+                <i class="fas fa-bars hamburger-icon"></i> 
+                <i class="fas fa-times cross-icon"></i> 
+            </div> 
+
+            <!--MENU BAR-->
+            <div class="menu"> 
+                <ul class="menu-list"> 
+                    <li class="menu-list-items"> 
+                        <a class="links" href="#home"> 
+                              Home 
+                          </a> 
+                    </li> 
+                    <li class="menu-list-items"> 
+                        <a class="links" href="#portfolio"> 
+
+                              Portfolio 
+                          </a> 
+                    </li> 
+                    <li class="menu-list-items"> 
+                        <a class="links" href="#about"> 
+                              About 
+                          </a> 
+                    </li> 
+                    <li class="menu-list-items"> 
+                        <a class="links" href="#services"> 
+                            Services 
+                          </a> 
+                    </li> 
+                    <li class="menu-list-items"> 
+                        <a class="links" href="#contact"> 
+                              Contact Me 
+                          </a> 
+                    </li> 
+                </ul> 
+            </div> 
+        </nav> 
+    </header> 
+  
+    <!-- Main hero banner -->
+    
+    <section id="home" class="hero"> 
+        <div class="intro"> 
+            <div class="headings"> 
+                <h3 class="greet-heading">Hello, I'm</h3> 
+                <h1 class="my-heading">Jim Hilary</h1> 
+                <h4 class="sub-heading"> 
+                    A Software Developer with 3 years of Experience. 
+                </h4> 
+            </div> 
+            <div class="intro-buttons"> 
+                <button class="btn common-btn">Hire Me</button> 
+                <button class="btn ghost-btn">Get Resume</button> 
+            </div> 
+        </div> 
+    </section> 
+  
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio"> 
+        <div class="portfolio-heading"> 
+            <h1 class="my-heading text-center">Featured Portfolio</h1> 
+        </div> 
+        <div class="portfolio-content"> 
+            <!--This div element has the class attribute set to "my-row". It is likely used to create a row within a grid system or layout.
+                 The specific styling or functionality associated with this class may depend on the CSS or framework being used.-->
+            <div class="my-row"> 
+                <!-- This div element has the class attribute set to "my-col". It is likely used to create a column within a grid system or layout.
+                    The specific styling or functionality associated with this class may depend on the CSS or framework being used.-->
+                <div class="my-col"> 
+                    <!--This div element has two classes, "my-card" and "port-card".
+                     These classes are likely used to define a card component or container for displaying portfolio items. -->
+                    <div class="my-card port-card"> 
+                        <!--src specifies the path of the imge file-->
+                        <div class="image"> 
+                            <img src="./images/webdesign.png" 
+                                 alt="Web design Image"> 
+                        </div> 
+                        <h3 class="greet-heading blue-text">Web Design</h3> 
+                        <p class="small-para blue-text">Designing</p> 
+                    </div> 
+                </div> 
+
+                <div class="my-col"> 
+
+                    <div class="my-card port-card"> 
+                        <div class="image"> 
+                            <img src="./images/web developer.jpg" 
+                                 alt="Web Development Image"> 
+                        </div> 
+                        <h3 class="greet-heading blue-text"> 
+                              Web Development 
+                          </h3> 
+                        <p class="small-para blue-text">Development</p> 
+                    </div> 
+                </div> 
+                <div class="my-col"> 
+                    <div class="my-card port-card"> 
+                        <div class="image"> 
+                            <img src="./Images/Android.jpg" alt="Android Development Image"> 
+                        </div> 
+                        <h3 class="greet-heading blue-text">Android Development</h3> 
+                        <p class="small-para blue-text">Development</p> 
+                    </div> 
+                </div> 
+            </div> 
+            <div class="my-row"> 
+                <div class="my-col"> 
+                    <div class="my-card port-card"> 
+                        <div class="image"> 
+                            <img src="./Images/2D animation.jpg" 
+                                 alt="Animation Image"> 
+                        </div> 
+                        <h3 class="greet-heading blue-text"> 
+                              Animation
+                          </h3> 
+                        <p class="small-para blue-text"> 2D Animation</p> 
+                    </div> 
+                </div> 
+                <div class="my-col"> 
+                    <div class="my-card port-card"> 
+                        <div class="image"> 
+                            <img src="./Images/front end.png" 
+                                 alt="Front end Image"> 
+                        </div> 
+                        <h3 class="greet-heading blue-text"> 
+                              Front End Development 
+                          </h3> 
+                        <p class="small-para blue-text"> 
+                              Front End Management 
+                          </p> 
+                    </div> 
+                </div> 
+                <div class="my-col"> 
+                    <div class="my-card port-card"> 
+                        <div class="image"> 
+                            <img src="./Images/videoEditing2.avif" 
+                                 alt="Video Editing Image"> 
+                        </div> 
+                        <h3 class="greet-heading blue-text"> 
+                              Video Editing 
+                          </h3> 
+                        <p class="small-para blue-text">Editing</p> 
+                    </div> 
+                </div> 
+            </div> 
+        </div> 
+    </section> 
+  
+    <!-- About Section -->
+    <section id="about" class="about"> 
+        <div class="about-text"> 
+            <h1 class="my-heading">About Me</h1> 
+            <p class="lead-para">
+    
+            Hello, I'm Jim Hilary, a junior software developer with a passion for coding, drawing, and watching animes. I find inspiration in animes, which fuels my creativity when storyboarding for 3D animation projects.
+
+I have acquired several online certifications in web design, Java, and Android development. Currently, I am in the final stages of completing my computer science degree at the University of Buea. With about 3 years of working experience,I specialize in front-end development and mobile app development.
+Throughout my journey, I have honed my skills in creating visually appealing and user-friendly interfaces for websites and mobile applications. I enjoy the process of bringing ideas to life through code and designing intuitive user experiences.
+Besides my technical pursuits, I find joy in exploring the intersection of technology and creativity. Drawing and watching animes have been a significant source of inspiration for me, nurturing my imagination and pushing me to think outside the box. 
+
+        </div> 
+        <div class="about-image"> 
+            <img src="./images/about.jpg" alt="About Image"> 
+        </div> 
+    </section> 
+  
+    <!-- Services Section -->
+    <section class="services" id="services"> 
+        <div class="services-heading"> 
+            <h1 class="my-heading text-center">My Services</h1> 
+        </div> 
+        <div class="services-content"> 
+            <div class="my-row"> 
+                <div class="my-col"> 
+                    <div class="my-card"> 
+                        <div class="icon"> 
+                            <i class="fas fa-paint-brush"></i> 
+                        </div> 
+                        <h3 class="greet-heading red-text">Web Design</h3> 
+                        <p class="small-para"> 
+                            Web design involves the creation and arrangement of visual elements
+                             to produce attractive and user-friendly websites. 
+                             This includes choosing colors, typography, layouts, and graphics.
+                             Examples of web design include creating a clean and modern interface
+                              for an e-commerce site or designing a visually appealing portfolio website 
+                              for a photographer.
+                        </p> 
+                         
+                    </div> 
+                </div> 
+                <div class="my-col"> 
+                    <div class="my-card"> 
+                        <div class="icon"> 
+                            <i class="fa-solid fa-code"></i> 
+                        </div> 
+                        <h3 class="greet-heading red-text"> 
+                              Web Development 
+                          </h3> 
+                        <p class="small-para"> 
+                            Web development refers to the creating,  
+                              building, and maintaining 
+                            of websites. It includes aspects such as  
+                              web design, web publishing, 
+                            web programming, and database management.  
+                              It is the creation of an 
+                            application that works over the internet  
+                              i.e. websites. 
+                        </p>  
+                    </div> 
+                </div> 
+                <div class="my-col"> 
+                    <div class="my-card"> 
+                        <div class="icon"> 
+                            <i class="fas  fa-mobile"></i> 
+                        </div> 
+                        <h3 class="greet-heading red-text">Android Development</h3> 
+                        <p class="small-para"> 
+            Android development refers to the process of creating mobile applications for devices that run on the Android operating system. 
+            It involves designing, coding, testing, and deploying applications using the Android software development kit (SDK) and programming languages 
+         like Java or Kotlin. Android development involves building mobile applications for Android devices using the Android SDK and programming languages 
+like Java or Kotlin. Developers utilize the Android SDK to create interactive and feature-rich applications that leverage the capabilities of Android devices,
+ such as touchscreens, sensors, and connectivity options. Examples of Android applications include social media apps like Instagram, productivity apps like Evernote, 
+ or game apps like Candy Crush Saga. Android developers utilize various tools, libraries, 
+ and frameworks to create efficient and user-friendly applications for a diverse range of Android devices.
+                        </p> 
+                    </div> 
+                </div> 
+            </div> 
+            <div class="my-row"> 
+                <div class="my-col"> 
+                    <div class="my-card"> 
+                        <div class="icon"> 
+                            <i class="fas  fa-bars"></i> 
+                        </div> 
+                        <h3 class="greet-heading red-text">2D Animation </h3> 
+                        <p class="small-para"> 
+                            2D animation is a technique that creates the illusion of movement in a two-dimensional space.
+                             It involves creating a sequence of individual frames,
+                              where each frame represents a different pose or position of the characters or objects. 
+                              These frames are then played in rapid succession to create the illusion of motion.  
+                        </p>
+
+                        <p class="small-para">
+                        2D animation is a technique that brings static images to life by creating a series of frames. 
+                        Artists and animators draw or digitally create characters and backgrounds, a
+                        nd then animate them by sequencing the frames. 
+                        Examples of 2D animation include classic Disney movies like "The Lion King" or
+                         TV shows like "The Simpsons," where characters move within a flat, two-dimensional space.
+                        </p> 
+                    </div> 
+                </div> 
+                <div class="my-col"> 
+                    <div class="my-card"> 
+                        <div class="icon"> 
+                            <i class="fab fa-wordpress-simple"></i> 
+                        </div> 
+                        <h3 class="greet-heading red-text"> 
+                             Front-End Dev
+                          </h3> 
+                        <p class="small-para"> 
+                            Front-end development refers to the creation and implementation of the user interface and 
+                            user experience of a website or application. Front-end developers use HTML, CSS, and JavaScript 
+                            to build visually appealing and interactive interfaces that enhance the user's interaction with 
+                            the website or application. Examples include designing and coding responsive website layouts or 
+                            developing interactive features like dropdown menus or image sliders.
+                        </p> 
+                    
+                    </div> 
+                </div> 
+                <div class="my-col"> 
+                    <div class="my-card"> 
+                        <div class="icon"> 
+                            <i class="fas fa-video"></i> 
+                        </div> 
+                        <h3 class="greet-heading red-text"> 
+                              Video Editing 
+                          </h3> 
+                        <p class="small-para"> 
+                            --------------------------
+                            ------------------------------
+                        </p> 
+                        
+                    </div> 
+                </div> 
+            </div> 
+        </div> 
+    </section> 
+  
+
+    <!-- Contact me section -->
+    <section class="contact" id="contact"> 
+        <div class="contact-heading"> 
+            <h1 class="my-heading text-center">Contact Me</h1> 
+        </div> 
+        <div class="contact-content"> 
+            <div class="contact-form-container"> 
+                <h1 class="greet-heading">Get In Touch</h1> 
+                <form class="contact-form"> 
+                    <input class="form-controls" type="text" 
+                           placeholder="Your Name"> 
+                    <input class="form-controls" type="text" 
+                           placeholder="Your Email"> 
+                    <input class="form-controls" type="text" 
+                           placeholder="Your Phone"> 
+                    <textarea class="form-controls" 
+                              placeholder="Write your message" 
+                              name="message" id="" cols="30"
+                              rows="10"> 
+                      </textarea> 
+                    <input class="form-btn btn common-btn" 
+                           type="submit" value="Send Message"> 
+                </form> 
+            </div> 
+            <div class="contact-details"> 
+                <h1 class="greet-heading">My Contact Details</h1> 
+                <div class="details"> 
+                    <h5 class="contact-heading">EMAIL</h5> 
+                    <p class="contact-text">example@gmail.com</p> 
+                </div> 
+                <div class="details"> 
+                    <h5 class="contact-heading">PHONE</h5> 
+                    <p class="contact-text">+237  650854572</p> 
+                </div> 
+                <div class="details"> 
+                    <h5 class="contact-heading">FAX</h5> 
+                    <p class="contact-text">+237 650854572</p> 
+                </div> 
+                <div class="details"> 
+                    <h5 class="contact-heading">ADDRESS</h5> 
+                    <p class="contact-text">Buea, Cameroon</p> 
+                    <p>Molyko Buea</p> 
+                
+                </div> 
+            </div> 
+        </div> 
+    </section> 
+  
+
+    <!-- Footer section -->
+    <footer class="footer"> 
+        <div class="footer-content text-center"> 
+            <h4> 
+                Copyright © 2024 All rights reserved | 
+            
+            </h4> 
+            <div class="social-links"> 
+                <div class="footer-menu"> 
+                    <ul class="footer-menu-list"> 
+                        <li class="footer-list-items"> 
+                            <a class="footer-links" href="#"> 
+                                <i class="fab fa-facebook-f"></i> 
+                            </a> 
+                        </li> 
+                        <li class="footer-list-items"> 
+                            <a class="footer-links" href="#"> 
+                                <i class="fab fa-twitter"></i> 
+                            </a> 
+                        </li> 
+                        <li class="footer-list-items"> 
+                            <a class="footer-links" href="#"> 
+                                <i class="fab fa-instagram"></i> 
+                            </a> 
+                        </li> 
+                        <li class="footer-list-items"> 
+                            <a class="footer-links" href="#"> 
+                                <i class="fab fa-linkedin-in"></i> 
+                            </a> 
+                        </li> 
+                    </li> 
+                    <li class="footer-list-items"> 
+                        <a class="footer-links" href="#"> 
+                            <i class="fab fa-whatsapp"></i> 
+                        </a> 
+                    </li> 
+                    </ul> 
+                </div> 
+            </div> 
+        </div> 
+    </footer> 
+  
+    <script src= 
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
+        integrity= 
+"sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"> 
+      </script> 
+    <script src="script.js"></script> 
+</body> 
+  
+</html>
+ 
